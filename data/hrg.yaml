@@ -1,0 +1,9 @@
+# file path
+train: data/hrg/train.txt
+val:   data/hrg/val.txt
+
+nc: 8 # number of classes
+
+# class names
+# names: ['phone']
+names: ['phone','1','2','3','4','5','6','7']

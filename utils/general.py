@@ -764,6 +764,7 @@ def non_max_suppression(prediction, conf_thres=0.25, iou_thres=0.45, edges=0, cl
     Returns:
          list of detections, on (n,6) tensor per image [xyxy, conf, cls]
     """
+    edges = 4
     ci = edges*2 + 4 # conf position
 
     nc = prediction.shape[2] - ci -1  # number of classes
